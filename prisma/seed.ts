@@ -1,12 +1,18 @@
-import { PrismaClient, Difficulty } from "@prisma/client";
-import { PrismaPg } from '@prisma/adapter-pg';
+import { PrismaClient, Difficulty } from "../generated/prisma";
+import { PrismaPg } from "@prisma/adapter-pg";
+
+const connectionString = process.env.DATABASE_URL;
+
+if (!connectionString) {
+  throw new Error("DATABASE_URL is not set.");
+}
 
 const adapter = new PrismaPg({
-  connectionString: process.env.DATABASE_URL!,
+  connectionString,
 });
 
 const prisma = new PrismaClient({
-    adapter
+  adapter,
 });
 
 async function main() {
@@ -48,8 +54,8 @@ main()
   .then(async () => {
     await prisma.$disconnect();
   })
-  .catch(async (e) => {
-    console.error(e);
+  .catch(async (error) => {
+    console.error(error);
     await prisma.$disconnect();
     process.exit(1);
   });

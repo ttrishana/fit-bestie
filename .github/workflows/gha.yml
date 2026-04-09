@@ -38,3 +38,5 @@ jobs:
         run: npx eslint src prisma --max-warnings=5
       - name: Build project
         run: npm run build
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}

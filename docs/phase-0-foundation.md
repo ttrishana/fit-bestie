@@ -11,8 +11,17 @@
 - [x] create supabase project
 - [x] connect prisma
 - [x] create initial migration
-- [] add 20 exercises
+- [x] add a couple exercises
 - [] deploy to vercel
+
+## Database setup
+- initialized next.js project with tailwind and eslint
+- created supabase project for managed postgres
+- added prisma ORM 
+- configured pooled and direct connection urls
+- implemented initial schema based on the erd
+- ran initial migration successfully
+- seeded starter exercises for development
 
 ## notes/learning
 - have never used next.js before!! but i have experience with js, html/css so let's hope it's not too hard to learn...
@@ -23,4 +32,6 @@ why does prisma want my direct rather than pooled?
 
 # how did i design my database schema?
 
+## struggles
+had to troubleshoot prisma client setup a bit --> plan on reading the docs to better understand
 ## outcome

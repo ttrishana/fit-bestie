@@ -28,6 +28,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           node-version: 22
-      - run: npm ci
-      - run: npm test
-      - run: npm run build
+      - name: Setup pnpm
+        run: npm install -g pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Run lint
+        run: pnpm lint
+      - name: Build project
+        run: pnpm build
+      - name: Type check
+        run: pnpm tsc --noEmit

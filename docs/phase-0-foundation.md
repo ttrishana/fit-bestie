@@ -14,5 +14,6 @@
 - [] deploy to vercel
 
 ## Notes
+- have never used next.js before!! but i have experience with js, html/css so let's hope it's not too hard to learn...
 
 ## Outcome

@@ -8,13 +8,19 @@
 ## tasks
 - [x] initialize next.js project
 - [x] add tailwind and eslint
-- [] create supabase project
-- [] connect prisma
-- [] create initial migration
+- [x] create supabase project
+- [x] connect prisma
+- [x] create initial migration
 - [] add 20 exercises
 - [] deploy to vercel
 
-## Notes
+## notes/learning
 - have never used next.js before!! but i have experience with js, html/css so let's hope it's not too hard to learn...
 
-## Outcome
+# direct url vs pooled url? what does this mean for my app?
+why does prisma want my direct rather than pooled?
+# importance of RLS (row level security)
+
+# how did i design my database schema?
+
+## outcome

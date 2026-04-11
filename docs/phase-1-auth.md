@@ -8,7 +8,8 @@
 this translates to bcrypt for password hashing, 15 min jwt access token, 7 day refresh token stored in httponly cookie, strict query scoping
 _httponly cookie protects against js injection attacks!_
 
-# changes
+## process
+- decided on single refresh token (see decision log)
 - added refreshTokenHash to users table
 to add new:
 ```npx prisma migrate dev --name add_refresh_token```

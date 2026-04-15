@@ -3,7 +3,7 @@ fitness app to help noobs at the gym (like me) structure their routine
 
 # mvp scope
 
-- pnboarding survey
+- onboarding survey
 - split selection
 - exercise database
 - simple exercise demos
